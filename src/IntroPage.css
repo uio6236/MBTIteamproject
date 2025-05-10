@@ -1,0 +1,17 @@
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.logo {
+  width: 230px;
+  margin-bottom: 12px;
+}
+
+.slogan {
+  width: 170px;
+}

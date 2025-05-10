@@ -1,0 +1,77 @@
+/* src/SignUpPage.css */
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 24px;
+  background-color: #ffffff;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 220px;
+  margin-bottom: 30px;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 15px;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+input {
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  font-size: 15px;
+  background-color: #1993f0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1784d1;
+}
+
+.mbti-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.mbti-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mbti-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.mbti {
+  color: #1993f0;
+}
+

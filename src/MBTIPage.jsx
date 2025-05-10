@@ -16,7 +16,7 @@ const MBTIPage = ({ onSelect }) => {
   const navigate = useNavigate();
 
   const handleSelect = (type) => {
-    onSelect(type); // ✅ App에서 mbti 저장
+    onSelect(type); // App에서 mbti 저장
     navigate('/'); // 예: 완료 후 Intro 페이지로 이동
   };
 

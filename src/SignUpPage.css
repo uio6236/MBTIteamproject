@@ -1,19 +1,23 @@
-/* src/SignUpPage.css */
+/* 전체 컨테이너 */
 .signup-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   padding: 40px 24px;
   background-color: #ffffff;
   height: 100vh;
   box-sizing: border-box;
 }
 
+/* 로고 */
 .logo {
   width: 220px;
   margin-bottom: 30px;
 }
 
+/* 폼 입력 영역 */
 form {
   width: 100%;
   max-width: 400px;
@@ -36,6 +40,7 @@ input {
   outline: none;
 }
 
+/* 버튼 스타일 */
 button {
   padding: 12px;
   font-size: 15px;
@@ -50,6 +55,7 @@ button:hover {
   background-color: #1784d1;
 }
 
+/* MBTI 선택 그리드 */
 .mbti-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -58,6 +64,7 @@ button:hover {
   margin-top: 20px;
 }
 
+/* MBTI 항목 */
 .mbti-option {
   display: flex;
   flex-direction: column;
@@ -69,9 +76,27 @@ button:hover {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
+/* 강조 색상 */
 .mbti {
   color: #1993f0;
+  font-weight: bold;
 }
+
+/* MBTI 상세 페이지용 텍스트 */
+.mbti-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.mbti-highlight {
+  font-size: 16px;
+  font-weight: bold;
+  color: #02b102;
+  margin-bottom: 16px;
+}
+
 

@@ -5,6 +5,8 @@ import LoginPage from './LoginPage';
 import SignUpPage1 from './SignUpPage1';
 import SignUpPage2 from './SignUpPage2';
 import MBTIPage from './MBTIPage';
+import MBTIDetailPage from './MBTIDetailPage';
+import RecommendSports from './RecommendSports';
 
 function App() {
   const [formData, setFormData] = useState({});
@@ -29,6 +31,8 @@ function App() {
       <Route path="/signup/step1" element={<SignUpPage1 onNext={handleNextSignUp} />} />
       <Route path="/signup/step2" element={<SignUpPage2 onSubmit={handleSubmitSignUp} />} />
       <Route path="/select-mbti" element={<MBTIPage onSelect={handleSelectMBTI} />} />
+      <Route path="/mbti/:type" element={<MBTIDetailPage />} />
+      <Route path="/recommend-sports" element={<RecommendSports />} />
     </Routes>
   );
 }

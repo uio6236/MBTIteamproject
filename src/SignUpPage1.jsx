@@ -17,7 +17,7 @@ const navigate = useNavigate();
       alert('비밀번호가 일치하지 않습니다.');
       return;
     }
-   navigate('/signup/step2');
+   navigate('/signup/step2', { state: { email, password } });
   };
 
   return (

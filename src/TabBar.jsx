@@ -1,23 +1,27 @@
-// src/components/TabBar.jsx
 import { Link, useLocation } from 'react-router-dom';
+import './TabBar.css';
+
+import homeIcon from './assets/home.png';
+import sportIcon from './assets/sport.png';
+import foodIcon from './assets/food.png';
+import optionIcon from './assets/option.png';
 
 export default function TabBar() {
-  const location = useLocation();
-  const path = location.pathname;
+const { pathname } = useLocation();
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 max-w-sm mx-auto bg-white border-t flex justify-around py-2 text-center">
+    <div className="tabbar">
       <Link to="/">
-        <img src="/images/home.png" alt="홈" className="w-6 h-6 mx-auto" />
+        <img src={homeIcon} alt="홈" className="tab-icon" />
       </Link>
-      <Link to="/sports">
-        <img src="/images/sport.png" alt="운동" className="w-6 h-6 mx-auto" />
+      <Link to="/recommend-sports">
+        <img src={sportIcon} alt="운동" className="tab-icon" />
       </Link>
-      <Link to="/foods">
-        <img src="/images/food.png" alt="음식" className="w-6 h-6 mx-auto" />
+      <Link to="/recommend-foods">
+        <img src={foodIcon} alt="식단" className="tab-icon" />
       </Link>
       <Link to="/settings">
-        <img src="/images/option.png" alt="설정" className="w-6 h-6 mx-auto" />
+        <img src={optionIcon} alt="설정" className="tab-icon" />
       </Link>
     </div>
   );

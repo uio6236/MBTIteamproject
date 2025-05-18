@@ -1,6 +1,6 @@
 // src/MBTIDetailPage.jsx
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import './SignUpPage.css';
 
 import ENFPImg from './assets/ENFP.jpg';
@@ -41,18 +41,24 @@ const MBTI_DETAILS = {
 
 const MBTIDetailPage = () => {
   const { type } = useParams();
+  const navigate = useNavigate();
   const mbti = MBTI_DETAILS[type];
 
   if (!mbti) {
     return <p>존재하지 않는 MBTI 유형입니다.</p>;
   }
 
+  const handleNext = () => {
+    navigate('/recommend-sports');
+  };
+
   return (
-    <div className="signup-container" style={{ textAlign: 'center' }}>
+    <div className="signup-container" style={{ textAlign: 'center' }} onClick={handleNext}>
       <h2>당신은</h2>
       <h3 style={{ color: 'green' }}>{mbti.title}</h3>
       <img src={mbti.image} alt={type} className="mbti-icon" />
       <p style={{ marginTop: '10px', fontWeight: 'bold' }}>{type}</p>
+      <p style={{ marginTop: '20px', color: 'gray' }}>화면을 터치해서 다음으로 이동</p>
     </div>
   );
 };

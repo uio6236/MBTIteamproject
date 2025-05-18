@@ -1,6 +1,9 @@
 // src/MBTIPage.jsx
 import React from 'react';
 import './SignUpPage.css';
+import { useNavigate } from 'react-router-dom';
+import { auth, db } from './firebase';
+import { doc, updateDoc } from 'firebase/firestore';
 // import logo from './assets/cocofit_logo.jpg';
 
 // 개별 MBTI 이미지 import
@@ -21,10 +24,7 @@ import ISTJImg from './assets/ISTJ.jpg';
 import ISFPImg from './assets/ISFP.jpg';
 import INFJImg from './assets/INFJ.jpg';
 
-
 import circleImg from './assets/circle.jpg';
-
-import { useNavigate } from 'react-router-dom';
 
 const MBTI_TYPES = [
   'ENFJ', 'ENFP', 'ENTJ', 'ENTP',
@@ -55,12 +55,26 @@ const MBTI_IMAGES = {
   // 나머지는 circleImg로 대체됨
 };
 
-const MBTIPage = ({ onSelect }) => {
+const MBTIPage = () => {
   const navigate = useNavigate();
 
-  const handleSelect = (type) => {
-    onSelect(type);
-    navigate(`/mbti/${type}`); // 상세 페이지로 이동
+  const handleSelect = async (type) => {
+    const user = auth.currentUser;
+
+    if (!user) {
+      alert('로그인이 필요합니다.');
+      return;
+    }
+
+    try {
+      const userDocRef = doc(db, 'users', user.uid);
+      await updateDoc(userDocRef, { mbti: type });
+      alert(`${type}로 저장되었습니다!`);
+      navigate(`/mbti/${type}`);  // ✅ 저장 후 상세 페이지로 이동
+    } catch (error) {
+      console.error('MBTI 저장 실패:', error);
+      alert('MBTI 저장 실패: ' + error.message);
+    }
   };
 
   return (

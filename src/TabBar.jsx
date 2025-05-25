@@ -11,7 +11,7 @@ const { pathname } = useLocation();
 
   return (
     <div className="tabbar">
-      <Link to="/">
+      <Link to="/chat">
         <img src={homeIcon} alt="홈" className="tab-icon" />
       </Link>
       <Link to="/recommend-sports">

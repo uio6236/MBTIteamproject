@@ -1,6 +1,6 @@
 // src/App.jsx
 import React, { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import IntroPage from './IntroPage';
 import LoginPage from './LoginPage';
@@ -8,6 +8,7 @@ import SignUpPage1 from './SignUpPage1';
 import SignUpPage2 from './SignUpPage2';
 import MBTIPage from './MBTIPage';
 import MBTIDetailPage from './MBTIDetailPage';
+import ChatBot from "./ChatBot";
 import RecommendSports from './RecommendSports';
 import RecommendFoods from './RecommendFoods';
 import Layout from './Layout'; // 공통 TabBar 포함하는 Layout 컴포넌트
@@ -40,6 +41,7 @@ function App() {
 
       {/* TabBar 포함되는 페이지들 */}
       <Route element={<Layout />}>
+        <Route path="/chat" element={<ChatBot />} /> {/* ✅ 홈 → 챗봇 */}
         <Route path="/recommend-sports" element={<RecommendSports />} />
         <Route path="/recommend-foods" element={<RecommendFoods />} />
       </Route>

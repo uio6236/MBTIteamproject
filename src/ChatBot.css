@@ -1,36 +1,122 @@
-/* src/ChatBot.css */
 .chat-container {
-  max-width: 500px;
+  max-width: 420px;
   margin: 30px auto;
   background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px 0 80px 0;
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
 }
+
+.mbti-info {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 0 12px 18px;
+}
+.mbti-type {
+  color: #1993f0;
+  font-weight: bold;
+}
+
 .chat-box {
-  height: 300px;
+  flex: 1;
+  min-height: 320px;
+  max-height: 400px;
   overflow-y: auto;
-  border: 1px solid #ccc;
-  padding: 10px;
-  background: #fafafa;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: #ffffff;
+  border-radius: 30px;
 }
+
+.chat-bubble-row {
+  display: flex;
+  align-items: flex-end;
+}
+
+.bot-row {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.user-row {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.chat-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin: 0 8px;
+  background: #e3e3e3;
+}
+
+.chat-bubble {
+  max-width: 62%;
+  padding: 13px 16px;
+  border-radius: 16px;
+  font-size: 15px;
+  word-break: break-word;
+  white-space: pre-line;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.bot {
+  background: #d8eaff;
+  color: #1a3b60;
+  border-bottom-left-radius: 4px;
+}
+
+.user {
+  background: #e5ffe4;
+  color: #155723;
+  border-bottom-right-radius: 4px;
+}
+
 .input-row {
   display: flex;
   gap: 10px;
+  margin: 0 18px;
+  margin-top: 12px;
+  position: relative;
 }
 input[type="text"] {
   flex: 1;
-  padding: 10px;
+  padding: 13px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
 }
 button {
   background-color: #4caf50;
   color: white;
-  padding: 10px;
+  padding: 0 22px;
   border: none;
+  border-radius: 10px;
   cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
 }
 button:hover {
   background-color: #45a049;
+}
+.chat-header-center {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 22px;
+  font-size: 19px;
+  line-height: 1.6;
+  font-family: 'SUIT', 'Pretendard', sans-serif;
+}
+.mbti-type {
+  color: #1993f0;
+  font-weight: bold;
+}
+.user-nickname {
+  color: #145ca6;
+  font-weight: bold;
 }

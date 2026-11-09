@@ -1,0 +1,180 @@
+.recommend-container {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.recommend-container h1 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #1993f0;
+}
+
+.subtext {
+  text-align: center;
+  font-size: 14px;
+  margin: 10px 0 20px;
+  color: #555;
+}
+
+.sports-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sport-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.sport-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.sport-info {
+  flex: 1;
+}
+
+.sport-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.sport-info p {
+  font-size: 13px;
+  margin-top: 4px;
+  color: #666;
+}
+
+.heart-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  margin-top: 6px;
+}
+
+.bottom-tab {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.tab-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.food-img {
+  max-width: 100%;
+  height: auto;
+  width: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.foods-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.food-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.food-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.food-info {
+  flex: 1;
+}
+
+.food-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.food-info p {
+  font-size: 13px;
+  margin-top: 4px;
+  color: #666;
+}
+
+
+.center-card {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.center-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 16px;
+  margin: 1rem 0;
+}
+
+.hashtag-list {
+  margin-top: 0.5rem;
+  font-size: 14px;
+  color: #555;
+}
+
+.hashtag {
+  margin-bottom: 2px;
+}
+
+.likes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.8rem 0;
+  font-weight: bold;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.blue-button {
+  background-color: #1993f0;
+  color: white;
+  padding: 0.6rem 1.4rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}

@@ -1,0 +1,82 @@
+[
+    {
+      "id": "INTJ",
+      "recommendedSportIds": ["runningOutdoor", "yoga", "climbing", "archery"],
+      "recommendedFoodIds": ["salmonSteak", "quinoaSalad", "avocadoToast", "brownRice", "lentilSoup"]
+    },
+    {
+      "id": "INTP",
+      "recommendedSportIds": ["swimming", "cyclingOutdoor", "hikingLight", "pottery"],
+      "recommendedFoodIds": ["tofuSalad", "lentilSoup", "oatmeal", "mushroomRisotto", "nutsAndSeeds"]
+    },
+    {
+      "id": "ENTJ",
+      "recommendedSportIds": ["crossfit", "weightTraining", "tennis", "golf", "soccer"],
+      "recommendedFoodIds": ["grilledChickenBreast", "salmonSteak", "bulgogi", "sweetPotato", "bibimbap"]
+    },
+    {
+      "id": "ENTP",
+      "recommendedSportIds": ["climbing", "martialArts", "basketball", "frisbee", "fencing"],
+      "recommendedFoodIds": ["bibimbap", "japchae", "kimchiJjigae", "mackerel", "shrimpScampi"]
+    },
+    {
+      "id": "INFJ",
+      "recommendedSportIds": ["yoga", "meditationWalk", "taiChi", "balletFit", "stretching"],
+      "recommendedFoodIds": ["seaweedSoup", "pumpkinPorridge", "cabbageRolls", "tofuSalad", "vegetablePorridge"]
+    },
+    {
+      "id": "INFP",
+      "recommendedSportIds": ["yoga", "pilates", "swimming", "balletFit", "gardening"],
+      "recommendedFoodIds": ["baeksuk", "mackerel", "gullgukbap", "brownRice", "oatmeal"]
+    },
+    {
+      "id": "ENFJ",
+      "recommendedSportIds": ["groupCycling", "dance", "volleyball", "hiking", "aerobics"],
+      "recommendedFoodIds": ["bulgogi", "japchae", "bibimbap", "spinachDoenjangguk", "fruitSalad"]
+    },
+    {
+      "id": "ENFP",
+      "recommendedSportIds": ["dance", "climbing", "aerobics", "kayaking", "frisbee"],
+      "recommendedFoodIds": ["kimchiJjigae", "bibimbap", "avocadoToast", "greekYogurt", "capreseSalad"]
+    },
+    {
+      "id": "ISTJ",
+      "recommendedSportIds": ["runningOutdoor", "weightTraining", "cyclingOutdoor", "golf", "powerWalking"],
+      "recommendedFoodIds": ["gullgukbap", "brownRice", "spinachDoenjangguk", "steamedEggs", "beefSeaweedSoup"]
+    },
+    {
+      "id": "ISFJ",
+      "recommendedSportIds": ["pilates", "stretching", "powerWalking", "gardening", "yoga"],
+      "recommendedFoodIds": ["baeksuk", "seaweedSoup", "pumpkinPorridge", "cabbageRolls", "vegetablePorridge"]
+    },
+    {
+      "id": "ESTJ",
+      "recommendedSportIds": ["weightTraining", "soccer", "crossfit", "basketball", "tennis"],
+      "recommendedFoodIds": ["grilledChickenBreast", "bulgogi", "kimchiJjigae", "sweetPotato", "eggFriedRice"]
+    },
+    {
+      "id": "ESFJ",
+      "recommendedSportIds": ["aerobics", "dance", "groupCycling", "badminton", "volleyball"],
+      "recommendedFoodIds": ["japchae", "bibimbap", "mackerel", "steamedEggs", "tofuKimchi"]
+    },
+    {
+      "id": "ISTP",
+      "recommendedSportIds": ["climbing", "martialArts", "cyclingOutdoor", "fencing", "kayaking"],
+      "recommendedFoodIds": ["mackerel", "grilledChickenBreast", "sweetPotato", "avocadoToast", "shrimpScampi"]
+    },
+    {
+      "id": "ISFP",
+      "recommendedSportIds": ["dance", "yoga", "skating", "swimming", "pottery"],
+      "recommendedFoodIds": ["salmonSteak", "greekYogurt", "vegetableSticksWithHummus", "oatmeal", "capreseSalad"]
+    },
+    {
+      "id": "ESTP",
+      "recommendedSportIds": ["basketball", "boxingLite", "soccer", "climbing", "crossfit"],
+      "recommendedFoodIds": ["bulgogi", "kimchiJjigae", "bibimbap", "salmonSteak", "sundubuJjigae"]
+    },
+    {
+      "id": "ESFP",
+      "recommendedSportIds": ["dance", "aerobics", "volleyball", "jumpRope", "skating"],
+      "recommendedFoodIds": ["japchae", "avocadoToast", "greekYogurt", "vegetableSticksWithHummus", "fruitSalad"]
+    }
+  ]
